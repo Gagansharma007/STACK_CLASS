@@ -13,6 +13,9 @@ class Stack{
         st.pop_back();
         return val;
     }
+    int size(){
+        return st.size();
+    }
     int top(){
         if( isEmpty() ) return -1;
         int val = st[st.size() - 1];
@@ -31,9 +34,12 @@ int main(){
     s.pushData(1);
     s.pushData(2);
     cout << "Top of Stack: " << s.top() << endl;
+    cout << "Number of Elements: " << s.size() << endl;
     cout << "Removed element: " << s.popData() << endl;
+    cout << "Number of Elements: " << s.size() << endl;
     cout << "Top of Stack: " << s.top() << endl;
     cout << "Removed element: " << s.popData() << endl;
+    cout << "Number of Elements: " << s.size() << endl;
     if( s.isEmpty() ) cout << "Empty" << endl;
     return 0;
 }
