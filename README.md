@@ -1,0 +1,1 @@
+This is Stack class made from vector.
